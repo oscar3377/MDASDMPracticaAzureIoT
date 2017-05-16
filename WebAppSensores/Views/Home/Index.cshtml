@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h1 class="grande">@Html.ActionLink("Datos Sensores", "Index", "Sensors")</h1>
+
+<div class="row">
+    <div class="container body-content margen-up">
+        <a href="@Url.Action("Index", "Sensors")">
+            <div class="fila text-center">
+                <div class="divImagen fondo_rojo"><img src="~/images/thermometer.png" class="imgGrande" draggable="false" /></div>
+                <div class="divImagen fondo_azul"><img src="~/images/raindrop.png" class="imgGrande" draggable="false" /></div>
+                <br />
+                <div class="divImagen fondo_gris"><img src="~/images/pressure.png" class="imgGrande" draggable="false" /></div>
+                <div class="divImagen fondo_verde"><img src="~/images/altitude.png" class="imgGrande" draggable="false" /></div>
+            </div>
+        </a>
+</div>
+</div>

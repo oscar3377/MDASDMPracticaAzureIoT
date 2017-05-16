@@ -1,0 +1,139 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.fila {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align:center;
+  padding:20px;
+}
+
+.fila:before,
+.fila:after {
+  display: table;
+  content: " ";
+}
+
+.fila:after {
+  clear: both;
+}
+
+.clear {
+    clear:both;
+}
+
+.divSensores {
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  width: 45%;
+  display:inline-block;
+  margin:15px;
+  text-align:left;
+}
+
+.divTitulo {
+    padding-bottom:10px;
+    font-weight: bold;
+    text-align:right;
+}
+
+.tituloRojo {
+    color:#de0000;
+}
+
+.tituloAzul {
+    color:#007bc3;
+}
+
+.tituloGris {
+    color:#4f4f4f;
+}
+
+.tituloVerde {
+    color:#286b0c;
+}
+
+
+
+.fondo_marino {
+    background-color:rgba(26, 0, 255, 0.50);
+}
+
+.fondo_rojo {
+    background-color:rgba(255, 0, 0, 0.15);
+}
+
+.fondo_azul {
+    background-color:rgba(0, 123, 195, 0.15);
+}
+
+.fondo_verde {
+    background-color:rgba(40, 107, 12, 0.15);
+}
+
+.fondo_marron {
+    background-color:#fff1a1;
+}
+
+.fondo_gris {
+    background-color:rgba(128, 128, 128, 0.15);
+}
+
+.scrollable {
+    max-height:240px;
+    overflow-y:auto;
+    display:block;
+}
+
+.divImagen {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  border-radius: 6px;
+  width: 22%;
+  display:inline-block;
+  margin:15px;
+  text-align:center;
+}
+
+.imgGrande{
+    height:200px;
+    width:auto;
+}
+
+h1.grande {
+    font-size:3em;
+    font-weight:500;
+    color:#4f4f4f;
+}

@@ -1,0 +1,151 @@
+﻿@model IEnumerable<WebAppSensores.Models.Sensor>
+
+@{
+    ViewBag.Title = "Datos Sensores";
+}
+
+<h2>Datos Sensores</h2>
+
+
+<div class="fila">
+
+    <div class="divSensores fondo_rojo">
+        <div class="divTitulo tituloRojo">TEMPERATURA ºC</div>
+        <table class="table scrollable">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeviceId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Value)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimeStamp)
+                </th>
+            </tr>
+
+            @foreach (var item in Model.Where(Type => Type.Type == "Temp") .OrderByDescending(Id => Id.Id))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeviceId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Value)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TimeStamp)
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+    <div class="divSensores fondo_azul">
+        <div class="divTitulo tituloAzul">HUMEDAD %</div>
+        <table class="table scrollable">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeviceId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Value)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimeStamp)
+                </th>
+            </tr>
+
+            @foreach (var item in Model.Where(Type => Type.Type == "Humidity") .OrderByDescending(Id => Id.Id))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeviceId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Value)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TimeStamp)
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+    <div class="divSensores fondo_gris">
+        <div class="divTitulo tituloGris">PRESIÓN hPa</div>
+        <table class="table scrollable">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeviceId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Value)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimeStamp)
+                </th>
+            </tr>
+
+            @foreach (var item in Model.Where(Type => Type.Type == "Pressure").OrderByDescending(Id => Id.Id))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeviceId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Value)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TimeStamp)
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+    <div class="divSensores fondo_verde">
+        <div class="divTitulo tituloVerde">ALTITUD m</div>
+        <table class="table scrollable">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeviceId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Value)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TimeStamp)
+                </th>
+            </tr>
+
+            @foreach (var item in Model.Where(Type => Type.Type == "Altitude").OrderByDescending(Id => Id.Id))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeviceId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Value)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TimeStamp)
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+
+    <div class="clear"></div>
+
+</div>

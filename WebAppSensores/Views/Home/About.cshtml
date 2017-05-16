@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Acerca de";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Aplicación que visualiza los datos que provee un sensor <i>Adafruit BME-280 de Temperatura, Humedad y Presión</i> sobre una <i>Raspberry Pi 3</i>.</p>
+<p>Los datos se envían a un <b>IoT Hub</b> de Microsoft Azure y son consumidos por un trabajo de <b>Azure Stream Analytics</b>, que los filtra y almacena en una <b>Base de Datos SQL de Azure</b> y sirve de fuente de datos para representarlos mediante <b>Power BI</b>.</p>
