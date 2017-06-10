@@ -11,7 +11,7 @@ namespace RegistroDispositivo
     class Program
     {
         static RegistryManager registryManager;
-        static string connectionString = "";
+        static string connectionString = "tobechanged";
 
         static void Main(string[] args)
         {
